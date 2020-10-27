@@ -9,14 +9,34 @@
     </script>
 </head>
 
-<div class="container">
-    <h4 class="pt-3">2DShooter Game Demo</h4>
-    <div class="jumbotron">
-    <p> Lets talk about the game a bit here</p>
+<div class="container pb-3">
+    <h3 class="pt-3 pb-3 text-white">2DShooter Game Demo</h3>
+    <div class="jumbotron pt-3 pb-3">
+    <h4>Background</h4>
+    <hr>
+    <p> This is the first game protoype that I'm making available here. Its a basic 2D shooter along the lines of geometery wars or the binding of isaac in terms of the core gameplay. You can move, you can shoot and theres a dash ability. 
+      The interesting component and the one I had fun designing was the idea of a shared pool of ammo and health. The player has 3 notches below their avatar that indicates their 'true health' and a blue sprite that's size corresponds to their ammo.
+      Every action that isn't moving with WASD consumes this blue ammo and making an action when you have no ammo to spend will damage the players true health.
+      </p>
+    <p>This idea of ammo and health as resources is nothing new, but to really stress the resouce management aspect of this game you will also take true health damage if you collect a pick up that will put you above the maximum capacity of the 
+      player. This stresses the need to have a throughput of ammo constantly spending the ammo to clear levels and rack up score and replenishing ammo but keeping that ammo store lean.
+    </p>
     </div>
     <div class="jumbotron pt-3">
-        <div id="unityContainer" style="width: 960px; height: 600px; margin: auto"></div>
+        <div id="unityContainer" style="width: 1024dw; height: 600px; margin: auto"></div>
         </div>
+    <div class="card">
+      <div class="card-header">
+        Information
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">How to Play</h5>
+        <p class="card-text">Here is how to play...</p>
+        <hr>
+        <h5 class="card-title">Links</h5>
+        <p class="card-text">Here are the links to github...</p>
+      </div>
+    </div>
 
 </div>
 {% endblock %}

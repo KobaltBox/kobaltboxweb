@@ -2,9 +2,53 @@
 
 {% block content %}
 <div class="container">
-    <h4 class="pt-3">What's a Kobalt Box?</h4>
-    <div class="jumbotron">
-    <p> Well here is the actual home content...</p>
+    <h4 class="pt-3 pb-3 text-white">What's a Kobalt Box?</h4>
+    <div class="jumbotron pt-3 pb-2">
+    <p>Welcome, my name is Jack McComiskey and I'm an aspiring game developer from Northern Ireland. Kobalt Box is the name I'm using to act as a pseudo games company that in reality is more of a portfolio of work that I want to share.</p>
+    <p>Below are some quick links to some interesting content.</p>
+    </div>
+
+    <div class="row mb-3">
+    <div class="col-lg-3">
+        <div class="card p-2" style="width: 16rem;  height: 22rem;">
+            <h5 class="card-title">Latest Game Demo</h5>
+            <img class="card-img-top" style="height: 9rem;" src="{{ url_for('static', filename='/images/gamescreenshot1.png') }}" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Take a look at the latest game demo and download the source code</p>
+            </div>
+            <a href="{{ url_for('shooterdemo') }}" class="btn btn-primary">Check it out</a>
+          </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card p-2" style="width: 16rem; height: 22rem;">
+                <h5 class="card-title">Latest Blog Post</h5>
+                <img class="card-img-top" src="{{ url_for('static', filename='/images/blog.png') }}" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Most recent musings from myself</p>
+                </div>
+                <a href="{{ url_for('blog') }}" class="btn btn-primary">Go there now</a>
+              </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card p-2" style="width: 16rem;  height: 22rem;">
+                    <h5 class="card-title">Render Gallery</h5>
+                    <img class="card-img-top" src="{{ url_for('static', filename='/images/renderscreenshot.png') }}" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Feast your eyes on a gallery of game art</p>
+                    </div>
+                    <a href="{{ url_for('shooterdemo') }}" class="btn btn-primary">Buckle up</a>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card p-2" style="width: 16rem;  height: 22rem;">
+                        <h5 class="card-title">Get in touch</h5>
+                        <img class="card-img-top" src="{{ url_for('static', filename='/images/social.png') }}" alt="Card image cap">
+                        <div class="card-body">
+                          <p class="card-text">Want to chat? Ask me something? Show me a cool cat picture you found?</p>
+                        </div>
+                        <a href="{{ url_for('shooterdemo') }}" class="btn btn-primary">Here's how</a>
+                      </div>
+                    </div>
     </div>
 </div>
 {% endblock %}

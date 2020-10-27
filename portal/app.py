@@ -16,6 +16,11 @@ def home():
 def blog():
     return render_template('blog.html')
 
+@app.route('/gallery')
+def gallery():
+    return render_template('gallery.html')
+
+#TODO Generalise this to serve all demos...
 @app.route('/2dshooter')
 def shooterdemo():
     return render_template('2dshooter.html')
