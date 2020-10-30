@@ -25,5 +25,10 @@ def gallery():
 def shooterdemo():
     return render_template('2dshooter.html')
 
+
+@app.route('/FLOdemo')
+def FLOdemo():
+    return render_template('FLOdemo.html')
+    
 if __name__ == '__main__':
     app.run(debug=True)

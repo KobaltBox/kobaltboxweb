@@ -2,11 +2,7 @@
 
 {% block content %}
 <head>
-    <title>Unity WebGL Player | 2DGameProject</title>
-    <script src="{{ url_for('static', filename='/Build/UnityLoader.js') }}"></script>
-    <script>
-      UnityLoader.instantiate("unityContainer", "Build/WebBuilds.json");
-    </script>
+    <title>Games - .FLO</title>
 </head>
 
 <div class="container pb-3">
@@ -22,10 +18,10 @@
       player. This stresses the need to have a throughput of ammo constantly spending the ammo to clear levels and rack up score and replenishing ammo but keeping that ammo store lean.
     </p>
     </div>
-    <div class="jumbotron pt-3">
-        <div id="unityContainer" style="width: 1024dw; height: 600px; margin: auto"></div>
-        </div>
-    <div class="card">
+    <div class="row mb-3">
+      <div class="btn btn-primary col-lg-4 m-auto" target="popup" onclick="window.open('FLOdemo','.FLO Demo','width=1620,height=920')"> Click Here to Play</div>
+    </div>
+    <div class="card mb-3">
       <div class="card-header">
         Information
       </div>
