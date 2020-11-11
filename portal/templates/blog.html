@@ -1,10 +1,16 @@
 {% extends "index.html" %}
+<head>
+
+</head>
 
 {% block content %}
 <div class="container">
     <h4 class="pt-3 pb-3 text-white">Blog</h4>
     <div class="jumbotron pt-3 pb-3">
-    <p> Well here is the actual blog content...</p>
+        <div id="medium-widget"></div>
+        <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+        <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@jackmccomiskey","postsPerLine":3,"limit":6,"picture":"small","fields":["description","author","claps","publishAt"],"ratio":"landscape"}})</script>    
     </div>
+    
 </div>
 {% endblock %}
