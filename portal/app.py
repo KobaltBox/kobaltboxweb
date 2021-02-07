@@ -21,9 +21,9 @@ def gallery():
     return render_template('gallery.html')
 
 #TODO Generalise this to serve all demos...
-@app.route('/2dshooter')
-def shooterdemo():
-    return render_template('2dshooter.html')
+@app.route('/FLOOverview')
+def FLOOverview():
+    return render_template('FLOOverview.html')
 
 
 @app.route('/FLOdemo')
