@@ -5,12 +5,16 @@
         <title>KobaltBox</title>
         <meta name="viewport" content="width = device-width, initial-scale = 1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"> 
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/portfolio.css') }}">
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <link rel="icon" href="{{ url_for('static', filename='/images/icon.png') }}">
     </head>
-    <body style="background: #474747;">
+    <body style="background: #FFFFFF;">
         <div class="container">
         <div class="page-header">
-        <h1 class="text-white"><a href="{{ url_for('home') }}" style="  color: inherit;
+        <h1 class="text-black"><a href="{{ url_for('home') }}" style="  color: inherit;
           text-decoration: inherit;">Kobalt Box</a></h1>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,6 +34,16 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Social
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://twitter.com/jackmccomiskey/">Twitter</a>
+                    <a class="dropdown-item" href="https://linkedin.com/in/jack-mccomiskey/">LinkedIn</a>
+                    <a class="dropdown-item" href="https://github.com/JackMcComiskey">GitHub</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Games
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -39,12 +53,11 @@
               </ul>
             </div>
           </nav>
-    </div>
         {% block content %}
         
         {% endblock %}
     <footer class="page-footer">    
-    <div class="container bg-light">
+    <div class="container bg-white">
       <div class="row">
         <div class="col-lg-4 text-center">
           <a class="text-muted" href="https://twitter.com/jackmccomiskey">@jackmccomiskey</a>
@@ -54,6 +67,7 @@
         </div>
         <div class="col-lg-4 text-center">
           <a class="text-muted" href="https://github.com/JackMcComiskey">jackmccomiskey@Github</a>
+        </div>
         </div>
       </div>
     </div>

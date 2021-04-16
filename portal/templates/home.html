@@ -1,55 +1,108 @@
 {% extends "index.html" %}
 
 {% block content %}
-<div class="container">
-    <h4 class="pt-3 pb-3 text-white">What's a Kobalt Box?</h4>
-    <div class="jumbotron pt-3 pb-2">
-    <p>Welcome, my name is Jack McComiskey and I'm an aspiring game developer from Northern Ireland. Kobalt Box is the name I'm using to act as a pseudo games company that in reality is more of a portfolio of work that I want to share.</p>
-    <p>On this site I intend to demonstrate my game development skills and as a bonus, Python and Flask. The source code and files from all works demonstrated here are available for download including the code for the site itself.</p>
-    <p>Below are some quick links to interesting content:</p>
-    </div>
 
-    <div class="row mb-3">
-    <div class="col-lg-3">
-        <div class="card p-2" style="width: 16rem;  height: 22rem;">
-            <h5 class="card-title">Latest Game Demo</h5>
-            <img class="card-img-top" style="height: 9rem;" src="{{ url_for('static', filename='/images/gamescreenshot1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Take a look at the latest game demo and download the source code</p>
-            </div>
-            <a href="{{ url_for('FLOOverview') }}" class="btn btn-primary">Check it out</a>
+<div class="portfolio">
+   <div class="container jumbotron pt-3 pb-3">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="img-thumbnail float-left" src="{{ url_for('static', filename='/images/portfolioprofilepicture.jpg') }}">
           </div>
-        </div>
-        <div class="col-lg-3">
-            <div class="card p-2" style="width: 16rem; height: 22rem;">
-                <h5 class="card-title">Latest Blog Post</h5>
-                <img class="card-img-top" src="{{ url_for('static', filename='/images/blog.png') }}" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text">Most recent musings from myself</p>
-                </div>
-                <a href="{{ url_for('blog') }}" class="btn btn-primary">Go there now</a>
-              </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="card p-2" style="width: 16rem;  height: 22rem;">
-                    <h5 class="card-title">Render Gallery</h5>
-                    <img class="card-img-top" src="{{ url_for('static', filename='/images/renderscreenshot.png') }}" alt="Card image cap">
-                    <div class="card-body">
-                      <p class="card-text">Feast your eyes on a gallery of game art</p>
-                    </div>
-                    <a href="{{ url_for('gallery') }}" class="btn btn-primary">Buckle up</a>
+            <div class="col-lg-8 text-center">  
+                <h1><span class="ion-minus"></span>Jack McComiskey<span class="ion-minus"></span></h1>
+                <div id="carouselContent" class="carousel slide" data-ride="carousel" data-interval="5000">
+                  <div class="carousel-inner" role="listbox">
+                      <div class="carousel-item active text-center p-4">
+                        <h3></span>Game Developer</span></h3>
+                      </div>
+                      <div class="carousel-item text-center p-4">
+                        <h3></span>3D Generalist</span></h3>
+                      </div>
+                      <div class="carousel-item text-center p-4">
+                        <h3></span>Game Designer</span></h3>
+                      </div>
+                      <div class="carousel-item text-center p-4">
+                        <h3></span>Python Developer</span></h3>
+                      </div>
+                      <div class="carousel-item text-center p-4">
+                        <h3></span>Cybersecurity Professional</span></h3>
+                      </div>
                   </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="card p-2" style="width: 16rem;  height: 22rem;">
-                        <h5 class="card-title">Get in touch</h5>
-                        <div class="card-body text-center">
-                          <a type="button" class="btn btn-info mb-3" href="https://twitter.com/Jackmccomiskey">Personal Twitter</a>
-                          <button type="button" class="btn btn-info mb-3">Kobalt Box Site Source</button>
-                          <button type="button" class="btn btn-info mb-3">Kobalt Box Github Org</button>
-                        </div>
-                      </div>
-                    </div>
+                <p class="text-">
+                  I'm Jack McComiskey, a game developer from Northern Ireland. I'm interested in all aspects of game development and I'm currently working as a cybersecurity
+                  professional and building out my portfolio of work.
+                  <br>
+                  <br>
+                  I have always been passionate about videogames I started out with 3D modelling and then during completion of my masters degree in computer games development, I learned to
+                  program.
+                  <br>
+                  <br>
+                  I have experience with Blender, Unity3D and most recently I have started working with Unreal Engine 4. My goal in the next 5 years is to be working full-time making videogames either here in
+                  Northern Ireland or elsewhere/remotely.
+                  <br>
+                  <br>
+                  If anything catches your eye, please feel free to contact me via any of my socia media links or via e-mail. Thanks!
+        
+                </p>
+              </div>
+        </div>
+
+        <hr>
+            
+        <div class="row">
+           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                <a href="#">
+			   		<img class="img-rounded" src="https://images.pexels.com/photos/207665/pexels-photo-207665.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
+			   	</a>                                                    
+			</div>
+			
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+			   	<a href="#">
+			     	<img class="img-rounded" src="https://images.pexels.com/photos/401107/pexels-photo-401107.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
+			   	</a>   					    				
+			</div>
+				
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+			   	<a href="#">
+			   		<img class="img-rounded" src="https://images.pexels.com/photos/311458/pexels-photo-311458.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+			   	</a>    					    				
+			</div>
+				
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+			   	<a href="#">
+			   		<img class="img-rounded" src="https://images.pexels.com/photos/6253/city-street-typography-design.jpg?h=350&auto=compress&cs=tinysrgb" alt="">
+			   	</a>    					    				
+			</div>
+               
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+			   	<a href="#">
+			   		<img class="img-rounded" src="https://images.pexels.com/photos/414974/pexels-photo-414974.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
+			   	</a>  					    				
+			</div>
+                
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+			   	<a href="#">
+			   		<img class="img-rounded" src="https://images.pexels.com/photos/137141/pexels-photo-137141.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
+			   	</a> 					    				
+			</div>
+                
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+			   <a href="#">
+			   		<img class="img-rounded" src="https://images.pexels.com/photos/207665/pexels-photo-207665.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
+			   	</a>					    				
+			</div>
+            
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+			   	<a href="#">
+			   	    <img class="img-rounded"  src="https://images.pexels.com/photos/121734/pexels-photo-121734.jpeg?h=350&auto=compress&cs=tinysrgb">
+			   	</a>  					    				
+			</div>
+        </div>  
     </div>
-</div>
+    </div>
+    </div>
+
+
+
 {% endblock %}
