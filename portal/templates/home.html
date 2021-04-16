@@ -49,11 +49,14 @@
         </div>
 
         <hr>
-            
+        <h3>Recent Works</h3>
         <div class="row">
-           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <a href="#">
-			   		<img class="img-rounded" src="https://images.pexels.com/photos/207665/pexels-photo-207665.jpeg?h=350&auto=compress&cs=tinysrgb" alt="">
+           <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 hovereffect">
+			   		<img class="img-rounded" src="{{ url_for('static', filename='/images/gamescreenshot1.png') }}" alt="Screenshot of .FLO my first completed Unity2D Game">
+             <div class="overlay">
+              <h2>Unity2D: FLO</h2>
+              <a class="info" href="{{ url_for('FLOOverview') }}">GO</a>
+           </div>
 			   	</a>                                                    
 			</div>
 			
