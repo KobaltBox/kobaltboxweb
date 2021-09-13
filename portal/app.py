@@ -21,14 +21,19 @@ def gallery():
     return render_template('gallery.html')
 
 #TODO Generalise this to serve all demos...
-@app.route('/FLOOverview')
+@app.route('/FLO')
 def FLOOverview():
     return render_template('FLOOverview.html')
+
+@app.route('/SuperSignalBoy')
+def SSBOverview():
+    return render_template('SSBOverview.html')
 
 
 @app.route('/FLOdemo')
 def FLOdemo():
     return render_template('FLOdemo.html')
+    
     
 if __name__ == '__main__':
     app.run(debug=True)

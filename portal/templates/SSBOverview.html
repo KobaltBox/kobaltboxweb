@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+
+{% block content %}
+<head>
+    <title>Games - Super Signal Boy</title>
+</head>
+
+<div class="portfolio">
+  <div class=" container jumbotron pt-3 pb-3">
+    <h3 class="pt-3 pb-3 text-black">Super Signal Boy</h3>
+    <h4>Introduction</h4>
+    <hr>
+    <p class="card-text"> Super Signal Boy is a mobile game currently in development. The goal is to guide Signal Boy to each levels exit by binding control of puzzle elements to 3 available on screen buttons.
+      <br>
+      <br>
+      It's very early days on this project but its a great 
+      learning opportunity for me when it comes to mobile development and more complex game mechanics. I'm levaraging a lot of what I learned in developing <a href="FLOOverview.html">FLO</a> in developing this game with best practices in mind.
+      </p>
+      <img class="card-img-top" src="{{ url_for('static', filename='/images/supersignalboy.png') }}" alt="supersignalboy">
+      <p>Placeholder character art for Super Signal Boy</p>
+    </div>
+
+</div>
+{% endblock %}
